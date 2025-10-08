@@ -1,0 +1,128 @@
+# Docker Compose para Producción/Migración Futura
+# Este archivo estará listo para cuando migremos de JSON a base de datos real
+
+version: '3.8'
+
+services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: bootbookingcamp_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${DB_DATABASE:-bootbookingcamp}
+      MYSQL_USER: ${DB_USERNAME:-bbcamp_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-password}
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - bootbookingcamp_network
+    command: --default-authentication-plugin=mysql_native_password
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: bootbookingcamp_redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - bootbookingcamp_network
+    command: redis-server --appendonly yes
+
+  # PHP Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: bootbookingcamp_backend
+    restart: unless-stopped
+    environment:
+      - DATA_SOURCE_MODE=database
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=${DB_DATABASE:-bootbookingcamp}
+      - DB_USERNAME=${DB_USERNAME:-bbcamp_user}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - ./backend:/var/www/html
+      - ./logs:/var/www/html/logs
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - bootbookingcamp_network
+
+  # Frontend (opcional para desarrollo)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: bootbookingcamp_frontend
+    restart: unless-stopped
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - bootbookingcamp_network
+
+  # Database Admin (opcional)
+  adminer:
+    image: adminer:latest
+    container_name: bootbookingcamp_adminer
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql
+    depends_on:
+      - mysql
+    networks:
+      - bootbookingcamp_network
+
+  # Redis Admin (opcional)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: bootbookingcamp_redis_commander
+    restart: unless-stopped
+    environment:
+      REDIS_HOSTS: local:redis:6379
+    ports:
+      - "${REDIS_ADMIN_PORT:-8081}:8081"
+    depends_on:
+      - redis
+    networks:
+      - bootbookingcamp_network
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  bootbookingcamp_network:
+    driver: bridge
+
+# Para usar este archivo:
+# 1. Copiar .env.example a .env
+# 2. Configurar variables de base de datos
+# 3. Ejecutar: docker-compose -f docker-compose.future.yml up -d
+# 4. Migrar datos JSON: php scripts/migrate-to-db.php
+# 5. Cambiar DATA_SOURCE_MODE=database en .env

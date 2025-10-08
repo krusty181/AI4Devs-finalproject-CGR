@@ -1,0 +1,108 @@
+[
+  {
+    "accommodation_type_id": 1,
+    "camping_id": 1,
+    "name": "Parcela Estándar",
+    "description": "Parcela espaciosa de 80m² para tienda de campaña o caravana pequeña. Incluye conexión eléctrica, agua y desagüe. Perfecta para familias de hasta 4 personas que buscan comodidad básica a buen precio.",
+    "max_capacity": 4,
+    "area_m2": 80.0,
+    "base_price": 25.00,
+    "services": [
+      "electricidad",
+      "agua",
+      "desague",
+      "iluminacion_exterior",
+      "mesa_exterior"
+    ],
+    "amenities": [
+      "Conexión eléctrica 16A",
+      "Toma de agua potable",
+      "Desagüe de aguas grises",
+      "Mesa de picnic incluida",
+      "Iluminación nocturna"
+    ],
+    "images": [
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-standard-1.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-standard-2.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-standard-setup.jpg"
+    ],
+    "is_active": true,
+    "created_at": "2025-01-15T10:00:00Z",
+    "updated_at": "2025-10-05T15:30:00Z"
+  },
+  {
+    "accommodation_type_id": 2,
+    "camping_id": 1,
+    "name": "Parcela Premium",
+    "description": "Parcela grande de 120m² con servicios adicionales. Incluye conexión eléctrica, agua, desagüe, WiFi privado y zona de barbacoa. Ideal para familias grandes o grupos que buscan mayor comodidad y privacidad.",
+    "max_capacity": 6,
+    "area_m2": 120.0,
+    "base_price": 35.00,
+    "services": [
+      "electricidad",
+      "agua",
+      "desague",
+      "wifi_privado",
+      "barbacoa",
+      "mesa_grande",
+      "sombrilla",
+      "parking_privado"
+    ],
+    "amenities": [
+      "Conexión eléctrica 32A",
+      "Toma de agua potable",
+      "Desagüe de aguas grises",
+      "WiFi privado de alta velocidad",
+      "Barbacoa de gas incluida",
+      "Mesa grande para 6 personas",
+      "Sombrilla de 3x3m",
+      "Plaza de parking privada"
+    ],
+    "images": [
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-premium-1.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-premium-2.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-premium-barbacoa.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-premium-setup.jpg"
+    ],
+    "is_active": true,
+    "created_at": "2025-01-15T10:00:00Z",
+    "updated_at": "2025-10-05T15:30:00Z"
+  },
+  {
+    "accommodation_type_id": 3,
+    "camping_id": 1,
+    "name": "Parcela Eco",
+    "description": "Parcela ecológica sin conexiones eléctricas, perfecta para una experiencia de camping más natural y sostenible. 60m² en zona tranquila con acceso a servicios comunitarios. Ideal para amantes de la naturaleza.",
+    "max_capacity": 3,
+    "area_m2": 60.0,
+    "base_price": 18.00,
+    "services": [
+      "agua_comunitaria",
+      "banos_ecologicos",
+      "zona_sombra_natural",
+      "senderos_natura"
+    ],
+    "amenities": [
+      "Sin conexión eléctrica",
+      "Acceso a punto de agua comunitario",
+      "Baños ecológicos cercanos",
+      "Zona de sombra natural",
+      "Acceso directo a senderos",
+      "Contenedores reciclaje cercanos"
+    ],
+    "images": [
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-eco-1.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-eco-2.jpg",
+      "https://cdn.bootbookingcamp.com/kcamp/parcela-eco-natural.jpg"
+    ],
+    "special_notes": [
+      "Ideal para desconexión digital",
+      "Experiencia de camping auténtica",
+      "Tarifa reducida por sostenibilidad",
+      "Acceso a cargador solar comunitario"
+    ],
+    "is_active": true,
+    "created_at": "2025-01-15T10:00:00Z",
+    "updated_at": "2025-10-05T15:30:00Z"
+  }
+]

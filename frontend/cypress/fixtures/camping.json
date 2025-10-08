@@ -1,0 +1,30 @@
+{
+  "camping_id": 1,
+  "name": "KCAMP - Camping Piloto",
+  "description": "Disfruta de unas vacaciones inolvidables en nuestro camping piloto, ubicado en un entorno natural privilegiado en la Costa Brava.",
+  "location": "Costa Brava, Girona, España",
+  "phone": "+34 972 123 456",
+  "email": "info@kcamp.com",
+  "website": "https://kcamp.com",
+  "services": [
+    "WiFi gratuito",
+    "Piscina",
+    "Restaurante",
+    "Parque infantil",
+    "Supermercado",
+    "Lavandería",
+    "Alquiler de bicicletas",
+    "Animación"
+  ],
+  "images": [
+    "camping-general.jpg",
+    "piscina.jpg",
+    "restaurante.jpg",
+    "parcelas.jpg",
+    "playa.jpg"
+  ],
+  "latitude": 41.9794,
+  "longitude": 3.0297,
+  "check_in_time": "15:00",
+  "check_out_time": "12:00"
+}

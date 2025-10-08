@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "name": "Juan Pérez",
+    "email": "juan.perez@email.com",
+    "phone": "+34 666 123 456",
+    "message": "Me interesa hacer una reserva para el verano. ¿Podrían contactarme para más información?",
+    "check_in_date": "2024-07-15",
+    "check_out_date": "2024-07-20",
+    "guests": 4,
+    "accommodation_type": "parcela_standard",
+    "created_at": "2024-01-15T10:30:00Z",
+    "status": "pending"
+  },
+  "message": "Consulta enviada correctamente. Te contactaremos pronto."
+}

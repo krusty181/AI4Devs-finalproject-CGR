@@ -1,0 +1,162 @@
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Dependency directories
+backend/vendor/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Temporary folders
+tmp/
+temp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Optional npm cache directory
+.npm
+
+# Optional ESLint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.parcel-cache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional ESLint cache
+.eslintcache
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# PHP Composer
+backend/composer.lock
+
+# PHPUnit result cache
+backend/.phpunit.result.cache
+
+# PHP CS Fixer cache
+backend/.php_cs.cache
+
+# Symfony cache
+backend/var/
+
+# Laravel specific
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/testing/
+backend/storage/framework/views/
+
+# Future Docker files (when needed)
+docker-compose.override.yml
+
+# Backup files
+*.backup
+*.bak
+
+# Database dumps
+*.sql
+*.dump
+
+# Certificate files
+*.pem
+*.key
+*.crt
+
+# AWS credentials
+.aws/
+
+# Terraform state files (for future infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Development database files
+*.sqlite
+*.db
+
+# Mock data backup (keep originals)
+data/mock/*.backup.json
+
+# Test output
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# Package manager lock files (keep package-lock.json and composer.lock for production)
+# yarn.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

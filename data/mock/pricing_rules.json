@@ -1,0 +1,131 @@
+[
+  {
+    "rule_id": 1,
+    "accommodation_type_id": null,
+    "rule_name": "Temporada Alta Verano",
+    "rule_type": "seasonal",
+    "conditions": {
+      "season": "high_season",
+      "start_date": "2025-06-15",
+      "end_date": "2025-09-15",
+      "description": "Temporada alta de verano"
+    },
+    "modifier_percentage": 25.00,
+    "valid_from": "2025-06-15",
+    "valid_to": "2025-09-15",
+    "priority": 1,
+    "is_active": true
+  },
+  {
+    "rule_id": 2,
+    "accommodation_type_id": null,
+    "rule_name": "Temporada Media Primavera-Otoño",
+    "rule_type": "seasonal",
+    "conditions": {
+      "season": "mid_season",
+      "periods": [
+        {"start_date": "2025-04-01", "end_date": "2025-06-14"},
+        {"start_date": "2025-09-16", "end_date": "2025-10-31"}
+      ],
+      "description": "Temporada media"
+    },
+    "modifier_percentage": 10.00,
+    "valid_from": "2025-04-01",
+    "valid_to": "2025-10-31",
+    "priority": 1,
+    "is_active": true
+  },
+  {
+    "rule_id": 3,
+    "accommodation_type_id": null,
+    "rule_name": "Temporada Baja Invierno",
+    "rule_type": "seasonal",
+    "conditions": {
+      "season": "low_season",
+      "start_date": "2025-11-01",
+      "end_date": "2025-03-31",
+      "description": "Temporada baja de invierno"
+    },
+    "modifier_percentage": -15.00,
+    "valid_from": "2025-11-01",
+    "valid_to": "2025-03-31",
+    "priority": 1,
+    "is_active": true
+  },
+  {
+    "rule_id": 4,
+    "accommodation_type_id": null,
+    "rule_name": "Fin de Semana",
+    "rule_type": "weekly",
+    "conditions": {
+      "days_of_week": [5, 6],
+      "description": "Viernes y sábados"
+    },
+    "modifier_percentage": 15.00,
+    "valid_from": "2025-01-01",
+    "valid_to": "2025-12-31",
+    "priority": 2,
+    "is_active": true
+  },
+  {
+    "rule_id": 5,
+    "accommodation_type_id": null,
+    "rule_name": "Reserva Anticipada 30 días",
+    "rule_type": "advance_booking",
+    "conditions": {
+      "min_advance_days": 30,
+      "description": "Descuento por reserva con 30+ días de antelación"
+    },
+    "modifier_percentage": -10.00,
+    "valid_from": "2025-01-01",
+    "valid_to": "2025-12-31",
+    "priority": 3,
+    "is_active": true
+  },
+  {
+    "rule_id": 6,
+    "accommodation_type_id": null,
+    "rule_name": "Estancia Larga 7+ noches",
+    "rule_type": "length_of_stay",
+    "conditions": {
+      "min_nights": 7,
+      "description": "Descuento por estancias de 7 o más noches"
+    },
+    "modifier_percentage": -8.00,
+    "valid_from": "2025-01-01",
+    "valid_to": "2025-12-31",
+    "priority": 3,
+    "is_active": true
+  },
+  {
+    "rule_id": 7,
+    "accommodation_type_id": 2,
+    "rule_name": "Premium Alta Demanda",
+    "rule_type": "occupancy",
+    "conditions": {
+      "min_occupancy_rate": 0.80,
+      "accommodation_type": "Premium",
+      "description": "Precio premium cuando ocupación >80%"
+    },
+    "modifier_percentage": 20.00,
+    "valid_from": "2025-01-01",
+    "valid_to": "2025-12-31",
+    "priority": 4,
+    "is_active": true
+  },
+  {
+    "rule_id": 8,
+    "accommodation_type_id": 3,
+    "rule_name": "Eco Sostenibilidad",
+    "rule_type": "promotional",
+    "conditions": {
+      "accommodation_type": "Eco",
+      "description": "Descuento sostenibilidad para parcelas eco"
+    },
+    "modifier_percentage": -12.00,
+    "valid_from": "2025-01-01",
+    "valid_to": "2025-12-31",
+    "priority": 5,
+    "is_active": true
+  }
+]

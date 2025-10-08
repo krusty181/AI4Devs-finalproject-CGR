@@ -1,0 +1,152 @@
+{
+  "camping_id": 1,
+  "name": "KCAMP - Camping Piloto",
+  "description": "Un camping familiar ubicado en un entorno natural privilegiado en la Costa Brava, perfecto para desconectar y disfrutar de la naturaleza. Ofrecemos parcelas amplias, instalaciones modernas y un ambiente tranquilo ideal para familias y parejas que buscan una experiencia de camping auténtica.",
+  "address": "Carretera Nacional 123, Km 15, 17001 Girona, España",
+  "phone": "+34 972 123 456",
+  "email": "info@kcamp.com",
+  "website": "https://www.kcamp.com",
+  "location": {
+    "latitude": 41.9794,
+    "longitude": 2.8214,
+    "city": "Girona",
+    "region": "Cataluña",
+    "country": "ES",
+    "postal_code": "17001"
+  },
+  "services": [
+    "piscina",
+    "restaurante",
+    "wifi_gratis",
+    "lavanderia",
+    "parque_infantil",
+    "supermercado",
+    "barbacoa_comunitaria",
+    "alquiler_bicicletas",
+    "zona_mascotas",
+    "duchas_agua_caliente",
+    "parking_gratuito",
+    "recepcion_24h"
+  ],
+  "images": [
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/main-view.jpg",
+      "alt": "Vista principal del camping KCAMP con sus amplias parcelas",
+      "type": "principal",
+      "order": 1
+    },
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/pool-area.jpg",
+      "alt": "Zona de piscina y recreo familiar",
+      "type": "instalaciones",
+      "order": 2
+    },
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/restaurant.jpg",
+      "alt": "Restaurante del camping con terraza",
+      "type": "instalaciones",
+      "order": 3
+    },
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/playground.jpg",
+      "alt": "Parque infantil con zona de juegos",
+      "type": "instalaciones",
+      "order": 4
+    },
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/parcelas-general.jpg",
+      "alt": "Vista general de las parcelas del camping",
+      "type": "alojamiento",
+      "order": 5
+    },
+    {
+      "url": "https://cdn.bootbookingcamp.com/kcamp/reception.jpg",
+      "alt": "Recepción del camping KCAMP",
+      "type": "instalaciones",
+      "order": 6
+    }
+  ],
+  "opening_hours": {
+    "reception": {
+      "high_season": "24 horas",
+      "low_season": "08:00-22:00"
+    },
+    "restaurant": {
+      "breakfast": "08:00-11:00",
+      "lunch": "13:00-16:00",
+      "dinner": "19:00-23:00"
+    },
+    "supermarket": "09:00-21:00",
+    "swimming_pool": "09:00-22:00"
+  },
+  "seasons": {
+    "high_season": {
+      "name": "Temporada Alta",
+      "start_date": "2025-06-15",
+      "end_date": "2025-09-15",
+      "description": "Verano - Todas las instalaciones abiertas"
+    },
+    "mid_season": {
+      "name": "Temporada Media", 
+      "periods": [
+        {"start_date": "2025-04-01", "end_date": "2025-06-14"},
+        {"start_date": "2025-09-16", "end_date": "2025-10-31"}
+      ],
+      "description": "Primavera y Otoño - Clima ideal"
+    },
+    "low_season": {
+      "name": "Temporada Baja",
+      "start_date": "2025-11-01",
+      "end_date": "2025-03-31",
+      "description": "Invierno - Servicios limitados"
+    }
+  },
+  "rules": [
+    "Check-in: 15:00 - 22:00",
+    "Check-out: 08:00 - 12:00",
+    "Silencio nocturno: 23:00 - 08:00",
+    "Mascotas admitidas con correa",
+    "Máximo 2 vehículos por parcela",
+    "Prohibido hacer fuego fuera de zonas habilitadas",
+    "Residuos deben depositarse en contenedores"
+  ],
+  "nearby_attractions": [
+    {
+      "name": "Playa de Sant Feliu",
+      "distance_km": 8.5,
+      "type": "playa",
+      "description": "Hermosa playa de arena dorada"
+    },
+    {
+      "name": "Casco Histórico de Girona",
+      "distance_km": 12.3,
+      "type": "cultural",
+      "description": "Ciudad medieval con murallas romanas"
+    },
+    {
+      "name": "Parque Natural Montseny",
+      "distance_km": 25.7,
+      "type": "naturaleza",
+      "description": "Reserva de la biosfera UNESCO"
+    },
+    {
+      "name": "Museo Dalí Figueres",
+      "distance_km": 35.2,
+      "type": "cultural",
+      "description": "Teatro-Museo Dalí"
+    }
+  ],
+  "contact_info": {
+    "emergency_phone": "+34 972 123 999",
+    "whatsapp": "+34 615 123 456",
+    "social_media": {
+      "facebook": "https://facebook.com/kcamping",
+      "instagram": "https://instagram.com/kcamp_oficial",
+      "google_maps": "https://goo.gl/maps/kcamp123"
+    }
+  },
+  "status": "active",
+  "created_at": "2025-01-15T10:00:00Z",
+  "updated_at": "2025-10-05T15:30:00Z",
+  "languages": ["es", "ca", "en", "fr"]
+}

@@ -1,0 +1,147 @@
+{
+  "availability_responses": [
+    {
+      "scenario": "success",
+      "probability": 0.85,
+      "response": {
+        "status": "success",
+        "data_source": "pms_integration",
+        "response_time_ms": 450,
+        "last_sync": "2025-10-05T15:30:00Z"
+      }
+    },
+    {
+      "scenario": "slow_response",
+      "probability": 0.10,
+      "response": {
+        "status": "success", 
+        "data_source": "pms_integration",
+        "response_time_ms": 2300,
+        "last_sync": "2025-10-05T15:28:00Z",
+        "warning": "PMS response slower than expected"
+      }
+    },
+    {
+      "scenario": "pms_timeout",
+      "probability": 0.03,
+      "response": {
+        "status": "fallback",
+        "data_source": "local_cache",
+        "response_time_ms": 150,
+        "last_sync": "2025-10-05T14:45:00Z",
+        "error": "PMS timeout - using cached data"
+      }
+    },
+    {
+      "scenario": "pms_unavailable",
+      "probability": 0.02,
+      "response": {
+        "status": "error",
+        "data_source": "unavailable",
+        "response_time_ms": 5000,
+        "error": "PMS service temporarily unavailable",
+        "retry_after": 300
+      }
+    }
+  ],
+  "contact_responses": [
+    {
+      "scenario": "success",
+      "probability": 0.90,
+      "response": {
+        "status": "success",
+        "confirmation_code": "KCAMP-{timestamp}-{random}",
+        "notifications_sent": {
+          "user_confirmation": true,
+          "camping_notification": true
+        },
+        "estimated_response_time": "24 horas"
+      }
+    },
+    {
+      "scenario": "email_delay",
+      "probability": 0.08,
+      "response": {
+        "status": "success",
+        "confirmation_code": "KCAMP-{timestamp}-{random}",
+        "notifications_sent": {
+          "user_confirmation": true,
+          "camping_notification": false
+        },
+        "warning": "Notificación al camping demorada",
+        "estimated_response_time": "48 horas"
+      }
+    },
+    {
+      "scenario": "email_error",
+      "probability": 0.02,
+      "response": {
+        "status": "partial_success",
+        "confirmation_code": "KCAMP-{timestamp}-{random}",
+        "notifications_sent": {
+          "user_confirmation": false,
+          "camping_notification": true
+        },
+        "error": "Error enviando confirmación al usuario",
+        "manual_followup_required": true
+      }
+    }
+  ],
+  "cache_behaviors": [
+    {
+      "endpoint": "/api/camping/info",
+      "ttl_seconds": 3600,
+      "hit_rate": 0.85,
+      "scenarios": [
+        {"type": "cache_hit", "probability": 0.85, "response_time_ms": 45},
+        {"type": "cache_miss", "probability": 0.15, "response_time_ms": 120}
+      ]
+    },
+    {
+      "endpoint": "/api/availability",
+      "ttl_seconds": 900,
+      "hit_rate": 0.60,
+      "scenarios": [
+        {"type": "cache_hit", "probability": 0.60, "response_time_ms": 85},
+        {"type": "cache_miss", "probability": 0.40, "response_time_ms": 650}
+      ]
+    }
+  ],
+  "error_simulations": [
+    {
+      "type": "rate_limit_exceeded",
+      "trigger": "requests_per_minute > 100",
+      "response": {
+        "status": 429,
+        "error": "Rate limit exceeded",
+        "retry_after": 60,
+        "limit": 100,
+        "window": "1 minute"
+      }
+    },
+    {
+      "type": "validation_error",
+      "trigger": "invalid_parameters", 
+      "response": {
+        "status": 422,
+        "error": "Validation failed",
+        "details": [
+          {
+            "field": "check_in",
+            "code": "INVALID_DATE",
+            "message": "Check-in date must be in the future"
+          }
+        ]
+      }
+    },
+    {
+      "type": "server_overload",
+      "trigger": "random_0.5_percent",
+      "response": {
+        "status": 503,
+        "error": "Service temporarily overloaded",
+        "retry_after": 30
+      }
+    }
+  ]
+}

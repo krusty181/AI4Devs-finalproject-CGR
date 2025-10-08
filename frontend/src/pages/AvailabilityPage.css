@@ -1,0 +1,352 @@
+/* AvailabilityPage.css */
+/* Variables CSS */
+:root {
+  --primary-color: #54cf17;
+  --primary-light: #ecf7e6;
+  --bg-color: #f6f8f6;
+  --text-color: #333333;
+  --light-gray: #7a7a7a;
+}
+
+/* Estilos generales */
+.availability-page {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+/* Header */
+.page-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+}
+
+.spacer {
+  width: 24px;
+}
+
+/* Contenido principal */
+.main-content {
+  padding: 24px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 24px 0;
+}
+
+/* Formulario de búsqueda */
+.search-form {
+  margin-bottom: 32px;
+}
+
+.dates-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--light-gray);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.date-input {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.select-dropdown {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-type {
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 999px;
+  padding: 8px 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-type.selected {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.btn-search {
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #47b214;
+}
+
+.btn-search:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Sección de resultados */
+.results-section {
+  margin-top: 32px;
+}
+
+.results-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.results-subtitle {
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  margin-bottom: 16px;
+}
+
+.no-results-alert {
+  padding: 16px;
+  background-color: #f6f8f6;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+}
+
+.suggestion-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.error-message {
+  padding: 16px;
+  background-color: #ffebee;
+  color: #c62828;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+/* Tarjeta de alojamiento */
+.accommodation-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accommodation-image {
+  width: 40%;
+  object-fit: cover;
+  height: 180px;
+}
+
+.accommodation-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.accommodation-type {
+  margin: 4px 0 0 0;
+  color: var(--light-gray);
+  font-size: 0.875rem;
+}
+
+.accommodation-description {
+  margin: 4px 0 0 0;
+  color: var(--light-gray);
+  font-size: 0.875rem;
+}
+
+.amenities-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--light-gray);
+}
+
+.amenity {
+  display: flex;
+  align-items: center;
+}
+
+.amenity-icon {
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.price {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 12px;
+}
+
+.view-availability {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: auto;
+  display: inline-block;
+}
+
+/* Navegación de pie de página */
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: 33%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-button.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Iconos de Material Design */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accommodation-card {
+    flex-direction: column;
+  }
+  
+  .accommodation-image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .dates-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .type-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .btn-type {
+    flex: 1;
+    text-align: center;
+    padding: 8px 12px;
+  }
+}

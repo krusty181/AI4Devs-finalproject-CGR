@@ -1,0 +1,83 @@
+{
+  "success": true,
+  "data": {
+    "availableAccommodations": [
+      {
+        "id": 1,
+        "name": "Parcela Estándar",
+        "description": "Parcela con servicios básicos: electricidad y agua corriente",
+        "type": "standard",
+        "maxGuests": 6,
+        "pricePerNight": 35.00,
+        "availableUnits": 3,
+        "totalUnits": 10,
+        "images": [
+          "parcela-standard-1.jpg",
+          "parcela-standard-2.jpg"
+        ],
+        "services": [
+          "Electricidad",
+          "Agua corriente",
+          "Recogida de basuras"
+        ],
+        "size": "80m²"
+      },
+      {
+        "id": 2,
+        "name": "Parcela Premium",
+        "description": "Parcela con servicios premium: electricidad, agua, desagüe y WiFi",
+        "type": "premium",
+        "maxGuests": 8,
+        "pricePerNight": 55.00,
+        "availableUnits": 1,
+        "totalUnits": 5,
+        "images": [
+          "parcela-premium-1.jpg",
+          "parcela-premium-2.jpg"
+        ],
+        "services": [
+          "Electricidad",
+          "Agua corriente",
+          "Desagüe",
+          "WiFi privado",
+          "Recogida de basuras"
+        ],
+        "size": "120m²"
+      },
+      {
+        "id": 3,
+        "name": "Bungalow Familiar",
+        "description": "Bungalow completamente equipado para familias",
+        "type": "bungalow",
+        "maxGuests": 6,
+        "pricePerNight": 85.00,
+        "availableUnits": 2,
+        "totalUnits": 8,
+        "images": [
+          "bungalow-1.jpg",
+          "bungalow-2.jpg",
+          "bungalow-interior.jpg"
+        ],
+        "services": [
+          "Cocina equipada",
+          "Baño privado",
+          "Aire acondicionado",
+          "WiFi",
+          "Terraza",
+          "Aparcamiento"
+        ],
+        "size": "45m²",
+        "rooms": 2,
+        "bathrooms": 1
+      }
+    ],
+    "searchParams": {
+      "checkInDate": "2024-07-15",
+      "checkOutDate": "2024-07-20",
+      "guests": 4,
+      "nights": 5
+    },
+    "totalResults": 3,
+    "availableUnits": 6
+  }
+}

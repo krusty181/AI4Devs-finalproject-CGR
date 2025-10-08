@@ -1,0 +1,352 @@
+/* AccommodationDetailPage.css */
+:root {
+  --primary-color: #54cf17;
+  --primary-light: #ecf7e6;
+  --bg-color: #f6f8f6;
+  --text-color: #333333;
+  --light-gray: #7a7a7a;
+  --border-color: #e0e0e0;
+}
+
+.accommodation-detail-page {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+/* Header */
+.detail-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.page-subtitle {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  margin: 0;
+  padding: 0;
+}
+
+.spacer {
+  width: 24px;
+}
+
+/* Main content */
+.detail-content {
+  padding: 0;
+}
+
+.main-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.detail-section {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.accommodation-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.accommodation-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.info-section {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+
+.info-value {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Galería */
+.gallery-section {
+  margin-top: 16px;
+}
+
+.gallery-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Servicios incluidos */
+.services-section {
+  margin-top: 16px;
+}
+
+.services-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.service-icon {
+  margin-right: 8px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+/* Precios */
+.prices-section {
+  margin-top: 16px;
+}
+
+.prices-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.price-total {
+  border-top: 1px solid var(--border-color);
+  font-weight: 600;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+/* Calendario */
+.calendar-section {
+  margin-top: 16px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.calendar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  gap: 8px;
+}
+
+.calendar-day-label {
+  font-size: 0.75rem;
+  color: var(--light-gray);
+  padding-bottom: 8px;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-size: 0.9rem;
+  border-radius: 50%;
+}
+
+.calendar-day.today {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.calendar-day.available {
+  color: var(--text-color);
+}
+
+.calendar-day.unavailable {
+  color: var(--light-gray);
+  text-decoration: line-through;
+}
+
+.calendar-day.selected {
+  background-color: var(--primary-light);
+  font-weight: bold;
+}
+
+/* Información adicional */
+.additional-info-section {
+  margin-top: 16px;
+}
+
+.additional-info-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Acciones */
+.actions-section {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.reserve-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-button {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: 33%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-button.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .actions-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}

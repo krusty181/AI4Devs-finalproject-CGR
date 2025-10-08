@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KCAMP</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#54cf17",
+              "background-light": "#f6f8f6",
+              "background-dark": "#162111",
+              "text-light": "#131811",
+              "text-dark": "#f6f8f6",
+              "text-muted-light": "#6f8863",
+              "text-muted-dark": "#a0b596",
+              "border-light": "#dfe5dc",
+              "border-dark": "#30402a",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex min-h-screen flex-col justify-between">
+<main class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 p-4 backdrop-blur-sm dark:bg-background-dark/80">
+<h1 class="flex-1 text-center text-2xl font-bold tracking-tighter text-text-light dark:text-text-dark">
+            KCAMP
+          </h1>
+<div class="flex items-center gap-1 rounded-full border border-border-light bg-background-light p-1 dark:border-border-dark dark:bg-background-dark">
+<button class="rounded-full bg-primary px-2 py-1 text-sm font-bold text-background-dark">ES</button>
+<button class="rounded-full px-2 py-1 text-sm font-medium text-text-muted-light dark:text-text-muted-dark">CA</button>
+<button class="rounded-full px-2 py-1 text-sm font-medium text-text-muted-light dark:text-text-muted-dark">EN</button>
+<button class="rounded-full px-2 py-1 text-sm font-medium text-text-muted-light dark:text-text-muted-dark">FR</button>
+</div>
+</header>
+<div class="p-4">
+<div class="relative flex min-h-[50vh] flex-col items-start justify-end overflow-hidden rounded-lg bg-cover bg-center p-6" style='background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBeju2uV3bwXeVf-44xBS4QGDXBAaHGyrLY9mtbxOrHVemoRrq6XDetHCp6dTTyEickF9vBnRyNesGLDXISZw6_EkuA9xztWr9A_b1i71Ta-r_o5swoieR7PiLp-pWNaZEO0JhZseK5RpeDHjgJa_Yjw1Dwj4Qho-HV_DjIEGHM7Ox-MmXCCdZdCyd4CLDqxIU6ZY5pfwDgPRerM99O6_3VRnf9pvPldhdri6bKeM6ghkqAPp5B6PgbqZN9q-V3ud8yNfmt4lijBDQ");'>
+<div class="z-10 flex flex-col items-start gap-4">
+<div class="text-left">
+<h2 class="text-4xl font-extrabold text-white sm:text-5xl">
+                  KCAMP
+                </h2>
+<p class="text-base text-white/90">
+                  Your perfect getaway in nature
+                </p>
+</div>
+<button class="rounded-full bg-primary px-6 py-3 text-base font-bold text-background-dark transition-transform hover:scale-105">
+                Book Now
+              </button>
+</div>
+</div>
+</div>
+<section class="px-4 py-8">
+<p class="text-center text-base text-text-muted-light dark:text-text-muted-dark">
+            Located in the heart of the Pyrenees, KCAMP offers a unique camping
+            experience for families and couples. Enjoy stunning views, modern
+            amenities, and a peaceful atmosphere.
+          </p>
+</section>
+<section class="px-4 py-8">
+<h3 class="mb-6 text-center text-2xl font-bold text-text-light dark:text-text-dark">
+            Key Services
+          </h3>
+<div class="grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
+<div class="flex flex-col items-center gap-2 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<div class="rounded-full bg-primary/20 p-3 text-primary">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M88,149.39a8,8,0,0,0,8-8V128h64v15.29a8,8,0,0,0,16,0V32a8,8,0,0,0-16,0V48H96V32a8,8,0,0,0-16,0V141.39A8,8,0,0,0,88,149.39ZM96,112V96h64v16Zm64-48V80H96V64ZM24,168a8,8,0,0,1,8-8c14.42,0,22.19,5.18,28.44,9.34C66,173.06,70.42,176,80,176s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34a8,8,0,0,1,0,16c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,178.94,137.57,176,128,176s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,178.94,41.58,176,32,176A8,8,0,0,1,24,168Zm208,40a8,8,0,0,1-8,8c-9.58,0-14,2.94-19.56,6.66-6.25,4.16-14,9.34-28.44,9.34s-22.2-5.18-28.44-9.34C142,218.94,137.57,216,128,216s-14,2.94-19.56,6.66c-6.24,4.16-14,9.34-28.43,9.34s-22.19-5.18-28.44-9.34C46,218.94,41.58,216,32,216a8,8,0,0,1,0-16c14.42,0,22.19,5.18,28.44,9.34C66,213.06,70.42,216,80,216s14-2.94,19.56-6.66c6.24-4.16,14-9.34,28.43-9.34s22.2,5.18,28.44,9.34c5.58,3.72,10,6.66,19.57,6.66s14-2.94,19.56-6.66c6.25-4.16,14-9.34,28.44-9.34A8,8,0,0,1,232,208Z"></path></svg>
+</div>
+<p class="font-bold">Pool</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<div class="rounded-full bg-primary/20 p-3 text-primary">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"></path></svg>
+</div>
+<p class="font-bold">Restaurant</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<div class="rounded-full bg-primary/20 p-3 text-primary">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204ZM237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87ZM205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Zm-32.26,35.76a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z"></path></svg>
+</div>
+<p class="font-bold">WiFi</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<div class="rounded-full bg-primary/20 p-3 text-primary">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M224.23,60.1,160,16.48V16a8,8,0,0,0-16,0v.48L81.77,60.1A16,16,0,0,0,80,72v8H48a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h8v48a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V144h8a8,8,0,0,0,8-8V88a8,8,0,0,0-8-8H176V72A16,16,0,0,0,174.23,60.1ZM96,72.72l56-38.89v38.89Zm64,63.28V184H96V136Zm8-8H88V80H168Zm24-40v32H184V88Zm-16,88v-8h16v8Z"></path></svg>
+</div>
+<p class="font-bold">Laundry</p>
+</div>
+</div>
+</section>
+<section class="px-4 py-8">
+<h3 class="mb-6 text-center text-2xl font-bold text-text-light dark:text-text-dark">
+            Gallery
+          </h3>
+<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAB0q6RJzSh5syXEzmcnqVKPDbm8UZKAnAule3UjiG9xT1NtxcaUQhmTuDWnsKWSyxAMQBZ5VJ6TJdfZ3mc7GT3S379M_NyxUS2249-NrrfH4agpk_hxWzt62QEBTL0VeodcNCsv1Mlp4ztYJJYxbuy01OTVBuCsv1Rbr3-wQHHasb2d9rTA2JBrgVAXSLsccDl6vDLliHv1WjqZ7ku8-E8537_D-MXtLXE5Sn2foXhJJThYUZfiNAITjR2paSlPNAIbEwHU7rVTVw");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfZ8cZra7cbWM1BvPBBgYUuZb1ptZFZiMbQG3YtQpgJKdByk3ErW0B_JuV6RJg1jm66S_IyiSOIS9d80QmVAB_ZD8BDzdMHlSd-W15rv5sPX643F-1QF9pvil04nuCVmlpYy-3HsFrWewv8eIji9bW3_ro7tOVjWe3VloW7K_T2me32u_4Ta9nZmLeos64IBP9FgWfJkuoHqurAiGcJHes07zIqAjLEDSjldv2niKBzTYYx6anT9dSD_Do3uMytwGOLEKYM4nCwvE");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvpbFOFWDPMEl1IzAYA-A0tNtMSSOGA7loDpukq8T0xHfii_p5WhZDjrGBr3KkZzf4YEukTkIXV2XOb8MXThP_fcP9LtyM7BArDhSgh-3ziuoas4lxAHd4ycWEdrgUW9EVo_9ooTYrRGjHPyzhClwnKuIz94sdTzDvuHFidiuv2bde2HqtEmAyTKBuNnr_pIg32fmcMG9b5Jv08JxDUrONhzwUiTlWnDBF1nwwr6-bG7ffduxQ65UJY4Eg6_wpDWs-_8NOVq9a_PY");'></div>
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAD7KlIZJUEoePGVl48JHgamuIsXZ9UfoLHARBRJO174vi3mbB0rEBUds0G0ZZo027r1zIeqFeR3YLKTigCr3cJh8z6GDtZ5LNFTFMvTnEU-1dszN4TwtOo_LaO2H2HSLmQYONXDgZvii8eBTyILUSeIZM6h-Kpo8qbs0V4XchCOSbyJdSc0LRGF4jcnVQRoePsLHw8kinNU6XsAYWUQwoq6hyWDqVxUOeWUN_3DGc6yTnJnmtZgbnBtyJsWnv-6E1IRKizBDDC9rQ");'></div>
+</div>
+</section>
+<section class="px-4 py-8">
+<h3 class="mb-6 text-center text-2xl font-bold text-text-light dark:text-text-dark">Accommodations</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<img alt="Standard Pitches" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB6YsXYFOzfvaRqIFnA8WFMH5uWEqcmms16b-O_lhjonAAQsxBYwoJDER_DjAH4C-gswB_SmeapkAOqenhLJ_OU1uBybxoxVZLmH4VTxGs5PiwQMt4SZdrlsYAzPGJSdpLpvE4xJKwfUIaBuoz2Y4F-1gvkAzo-iT02pH8uMmNFZUV0br8rxLt6_AkJWmVfH4-QrCqIbm8ePWfoSoPYDU7gEkbzklKtYqZJxtrxXK4OgcufpsoCjePZtCz27CmOIyUpL-_O8ECWxk"/>
+<div class="flex-1">
+<p class="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark">Standard</p>
+<h4 class="font-bold text-text-light dark:text-text-dark">Standard Pitches</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Spacious pitches for tents and small caravans.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<img alt="Premium Pitches" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpwTPLbHgzs9SVFcMvDRYfB5bl-VK1pG4G9rFWFZX06ZFwlo7pJCvK1xMxfaJwEUcght55Tc7W9sX205Ga9xTs0M597TOiSgTq6XQ6AIrvwTUpPo1nLU2_jdSTRxAkGYxGnzdsdQrb8jMhMkwbfTgQSVyiH1TxH7vfVZaO37HIaetGQdM2yOl9e1ICiccx_U3MXh-ZuMFkBxvkEI4jO3mz3pYQoXw0DOyJK73v-WcB7FL8OgW0jUaWh-gfQHnIANHU2YotTkJThtc"/>
+<div class="flex-1">
+<p class="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark">Premium</p>
+<h4 class="font-bold text-text-light dark:text-text-dark">Premium Pitches</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Larger pitches with electrical hookups.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<img alt="Bungalows" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrsm_DxWQkCbP7hq8YgLNpuMDYCyVsys1qw3r2qMAufC4SpWtcdTSnXR-hxUUi5hHuHSNUgcuQAckQngkyicG8bPaA0B8LDYmE26iXL99culeZ7LQoS6UW26Q5WU7Kws1yKDE9rdEUtMGGvu9cXuvs5Jw-pxXi7WwHFtP_Emiz8HD6vJZwg1qeVb7zFrKPUydeacYBjDj7WRs9r8vRaNlSmhMz4ftpAFO3hQAa6EPYkpfWGrax3TFaNPf-bibDcjSENKpZzhGgf7I"/>
+<div class="flex-1">
+<p class="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark">Bungalows</p>
+<h4 class="font-bold text-text-light dark:text-text-dark">Bungalows</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Fully equipped bungalows for a comfortable stay.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-lg border border-border-light bg-background-light p-4 dark:border-border-dark dark:bg-background-dark">
+<img alt="Motorhome Area" class="h-24 w-24 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApAWbXs1jLSZ1L0tuHinn6K2VBeweuFjdq99uWdj4Wq88h10pXEGLUAJWy15cL2pVotcbEF8hynKwOqzv0FR5xuD9wt97uwN-SmCrPHbRkkqzTGusr0HnLt4vop7OacSNVmBFuO1Vd27BAvg3fCOXoyJeYAWkgPWfPyTPGZ2gETr6Hpuam3KlpPtAEkwbt5edL-kTe-uF9kkyqwhMg6KV1Y4DlZ6htfwkHDcB-QwcJnQ2PJG4D128K795Tqbw_SG8G2BqoF6mZiuQ"/>
+<div class="flex-1">
+<p class="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark">Motorhome Area</p>
+<h4 class="font-bold text-text-light dark:text-text-dark">Motorhome Area</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Designated area for motorhomes with service points.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-8">
+<h3 class="mb-6 text-center text-2xl font-bold text-text-light dark:text-text-dark">Location</h3>
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAu66Fg0nr1qxkLqwlP0R6omkHi8VgaWM6d6auYfBviQtvO736cSsqNtiWvFf1F6ZE3Fuk8nhBOmFQ-bOK8TVmScwC2A3gEPBKeJOxd_p6wfpoCInIjefbcqWk6J7E3PmoeVioMUqcjeTbb0kAkpLzO-D1TAjbo1uoRbPTGxkHKBQzKz4NLD8ZvzYAYJ4AqFRb8HHj6J9HOK8nCAusdC0PKegO40cGX8QeXIDJh132LhQf4UgSMM2IZVjrwjCzU24NCtNLJ9IYuLBw");'></div>
+</section>
+<section class="px-4 py-8">
+<h3 class="mb-6 text-center text-2xl font-bold text-text-light dark:text-text-dark">Contact</h3>
+<div class="rounded-lg border border-border-light bg-background-light dark:border-border-dark dark:bg-background-dark">
+<div class="flex items-center justify-between border-b border-border-light p-4 dark:border-border-dark">
+<p class="text-text-muted-light dark:text-text-muted-dark">Phone</p>
+<p class="font-semibold text-text-light dark:text-text-dark">+34 123 456 789</p>
+</div>
+<div class="flex items-center justify-between border-b border-border-light p-4 dark:border-border-dark">
+<p class="text-text-muted-light dark:text-text-muted-dark">Email</p>
+<p class="font-semibold text-text-light dark:text-text-dark">info@kcamp.com</p>
+</div>
+<div class="flex items-center justify-between p-4">
+<p class="text-text-muted-light dark:text-text-muted-dark">Address</p>
+<p class="text-right font-semibold text-text-light dark:text-text-dark">Carrer del Camping, 1, 08001 Barcelona</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 pb-safe dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-around border-t border-border-light py-2 dark:border-border-dark">
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path></svg>
+<span class="text-xs font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-text-muted-light dark:text-text-muted-dark" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path></svg>
+<span class="text-xs font-medium">Book</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-text-muted-light dark:text-text-muted-dark" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
+<span class="text-xs font-medium">Contact</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

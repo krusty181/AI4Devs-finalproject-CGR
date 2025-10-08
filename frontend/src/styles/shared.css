@@ -1,0 +1,352 @@
+/* styles/shared.css - Estilos CSS compartidos */
+
+/* Variables CSS */
+:root {
+  --primary-color: #54cf17;
+  --primary-light: #ecf7e6;
+  --bg-color: #f6f8f6;
+  --text-color: #333333;
+  --light-gray: #7a7a7a;
+  --border-color: #e0e0e0;
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --surface-subtle: #f0f2f0;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Layout utilities */
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+/* Header styles compartidos */
+.page-header,
+.detail-header,
+.contact-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-left: -8px;
+  border-radius: var(--border-radius-sm);
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: var(--surface-subtle);
+}
+
+.page-title,
+.page-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.page-subtitle {
+  font-size: 0.85rem;
+  color: var(--light-gray);
+}
+
+.spacer {
+  width: 24px;
+}
+
+/* Button styles */
+.button {
+  font-family: var(--font-family);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px 24px;
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: #48b614;
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 14px 24px;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  background-color: var(--surface-subtle);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  padding: 16px;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(84, 207, 23, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--light-gray);
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: var(--error-color);
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Footer Navigation compartido */
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: var(--shadow-medium);
+  z-index: 1000;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: 33%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.2s ease;
+  border-radius: var(--border-radius-sm);
+}
+
+.footer-button.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.footer-button:hover:not(.active) {
+  color: var(--text-color);
+  background-color: var(--surface-subtle);
+}
+
+/* Material Icons */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Status messages */
+.status-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success-color);
+  border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.status-error {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--error-color);
+  border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .page-container {
+    padding-bottom: 80px;
+  }
+  
+  .page-header,
+  .detail-header,
+  .contact-header {
+    padding: 12px;
+  }
+  
+  .button-primary,
+  .button-secondary {
+    padding: 14px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: #000000;
+    --light-gray: #666666;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select {
+    border: 2px solid var(--border-color);
+  }
+}
+
+/* Focus visible for keyboard navigation */
+.button:focus-visible,
+.form-input:focus-visible,
+.form-textarea:focus-visible,
+.form-select:focus-visible,
+.footer-button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

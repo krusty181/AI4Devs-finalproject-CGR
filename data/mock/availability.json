@@ -1,0 +1,292 @@
+{
+  "2025-10-06": {
+    "1": {
+      "available_units": 7,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.30,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 3,
+      "total_units": 5,
+      "price_per_night": 38.50,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.40,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 6,
+      "total_units": 8,
+      "price_per_night": 19.80,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.25,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-07": {
+    "1": {
+      "available_units": 5,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.50,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 2,
+      "total_units": 5,
+      "price_per_night": 38.50,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.60,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 5,
+      "total_units": 8,
+      "price_per_night": 19.80,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.37,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-08": {
+    "1": {
+      "available_units": 6,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.40,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 3,
+      "total_units": 5,
+      "price_per_night": 38.50,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.40,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 6,
+      "total_units": 8,
+      "price_per_night": 19.80,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.25,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-09": {
+    "1": {
+      "available_units": 4,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.60,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 1,
+      "total_units": 5,
+      "price_per_night": 38.50,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.80,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 4,
+      "total_units": 8,
+      "price_per_night": 19.80,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.50,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-10": {
+    "1": {
+      "available_units": 3,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.70,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 1,
+      "total_units": 5,
+      "price_per_night": 38.50,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.80,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 3,
+      "total_units": 8,
+      "price_per_night": 19.80,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.62,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-11": {
+    "1": {
+      "available_units": 2,
+      "total_units": 10,
+      "price_per_night": 24.44,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.80,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 0,
+      "total_units": 5,
+      "price_per_night": 44.28,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 2,
+      "total_units": 8,
+      "price_per_night": 22.77,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.75,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-10-12": {
+    "1": {
+      "available_units": 1,
+      "total_units": 10,
+      "price_per_night": 24.44,
+      "base_price": 25.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.90,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 0,
+      "total_units": 5,
+      "price_per_night": 44.28,
+      "base_price": 35.00,
+      "season": "mid_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 1,
+      "total_units": 8,
+      "price_per_night": 22.77,
+      "base_price": 18.00,
+      "season": "mid_season",
+      "occupancy_rate": 0.87,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-12-15": {
+    "1": {
+      "available_units": 9,
+      "total_units": 10,
+      "price_per_night": 21.25,
+      "base_price": 25.00,
+      "season": "low_season",
+      "occupancy_rate": 0.10,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 4,
+      "total_units": 5,
+      "price_per_night": 29.75,
+      "base_price": 35.00,
+      "season": "low_season",
+      "occupancy_rate": 0.20,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 7,
+      "total_units": 8,
+      "price_per_night": 15.30,
+      "base_price": 18.00,
+      "season": "low_season",
+      "occupancy_rate": 0.12,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-07-15": {
+    "1": {
+      "available_units": 1,
+      "total_units": 10,
+      "price_per_night": 31.25,
+      "base_price": 25.00,
+      "season": "high_season",
+      "occupancy_rate": 0.90,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 0,
+      "total_units": 5,
+      "price_per_night": 43.75,
+      "base_price": 35.00,
+      "season": "high_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 1,
+      "total_units": 8,
+      "price_per_night": 22.50,
+      "base_price": 18.00,
+      "season": "high_season",
+      "occupancy_rate": 0.87,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  },
+  "2025-07-16": {
+    "1": {
+      "available_units": 0,
+      "total_units": 10,
+      "price_per_night": 31.25,
+      "base_price": 25.00,
+      "season": "high_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "2": {
+      "available_units": 0,
+      "total_units": 5,
+      "price_per_night": 43.75,
+      "base_price": 35.00,
+      "season": "high_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    },
+    "3": {
+      "available_units": 0,
+      "total_units": 8,
+      "price_per_night": 22.50,
+      "base_price": 18.00,
+      "season": "high_season",
+      "occupancy_rate": 1.00,
+      "last_updated": "2025-10-05T14:30:00Z"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/camping-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BOOTBOOKINGCAMP - Sistema de reservas para camping. Encuentra y reserva tu parcela ideal." />
+    <meta name="keywords" content="camping, reservas, parcelas, vacaciones, naturaleza" />
+    <title>BOOTBOOKINGCAMP - Reservas de Camping</title>
+    
+    <!-- Preload key resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="BOOTBOOKINGCAMP - Reservas de Camping" />
+    <meta property="og:description" content="Sistema de reservas para camping. Encuentra y reserva tu parcela ideal." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/camping-preview.jpg" />
+    
+    <style>
+      /* Loading styles */
+      #root {
+        min-height: 100vh;
+      }
+      
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #2e7d32;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 16px;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Reset basic styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Cargando BOOTBOOKINGCAMP...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

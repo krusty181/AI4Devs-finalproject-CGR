@@ -1,0 +1,12 @@
+[
+    {
+        "id": "contact_68e2988ba78281.09825940",
+        "name": "test test",
+        "email": "cristina.gutierrez@septeo.com",
+        "phone": "666666666",
+        "subject": "Consulta de reserva - Parcela",
+        "message": "lalala\n\n--- Detalles de la consulta ---\nFecha de llegada: No especificada\nFecha de salida: No especificada\nN\u00famero de personas: 1\nTipo de alojamiento preferido: Parcela",
+        "submitted_at": "2025-10-05 16:10:51",
+        "status": "new"
+    }
+]
